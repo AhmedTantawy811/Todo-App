@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:contentPadding="16dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view_id"
+            android:layout_width="4dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/blue"
+            android:layout_margin="8dp"
+
+            />
+        <TextView
+            android:id="@+id/title_Task_Te"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="18dp"
+            tools:text="title task"
+            android:textSize="25sp"
+
+            />
+
+        <TextView
+            android:id="@+id/time_todo_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/title_Task_Te"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="18dp"
+            tools:text="description"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+              android:background="@drawable/check_box"
+            android:src="@drawable/check_ic"
+            android:layout_margin="18dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

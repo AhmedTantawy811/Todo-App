@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Add Task"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <EditText
+        android:id="@+id/task_name_Ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Task Name"
+        android:textSize="22sp"/>
+    <EditText
+        android:id="@+id/description_task_Ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/task_name_Ed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Description Task"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/select_time_title_Tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description_task_Ed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Select Time :"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/select_time_Tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/select_time_title_Tex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:textColor="#6E6D6D"
+        />
+
+    <Button
+        android:id="@+id/addTask_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_time_Tex"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
